@@ -1,6 +1,6 @@
-wilbrand2bomb_android
+# wilbrand2bomb_android
 
-Installation
+## Installation
 
 1. Install Termux.
 
@@ -30,7 +30,7 @@ The setup must be completed before generating an exploit.
 
 ---
 
-Menu
+## Menu
 
 When started, "wilbrand2bomb.sh" provides the following options:
 
@@ -40,7 +40,7 @@ When started, "wilbrand2bomb.sh" provides the following options:
 
 ---
 
-First-time Setup
+## First-time Setup
 
 The setup menu provides two installation methods:
 
@@ -61,7 +61,7 @@ Use this option only if the included version does not work correctly on your dev
 
 ---
 
-Generate Wilbrand Exploit
+## Generate Wilbrand Exploit
 
 When generating an exploit, the following information is required:
 
@@ -111,7 +111,7 @@ K = Korea
 
 ---
 
-Output Folder
+## Output Folder
 
 Each time an exploit is generated, the previous output is automatically removed.
 
@@ -130,7 +130,7 @@ Copy the contents of this folder to the root of your Wii SD card.
 
 ---
 
-Included Files
+## Included Files
 
 This project contains:
 
@@ -147,7 +147,7 @@ This allows the project to be recompiled in the future if needed.
 
 ---
 
-Notes
+## Notes
 
 The included Wilbrand binary is recommended for normal use.
 
@@ -157,7 +157,7 @@ The original source code is preserved to allow rebuilding the project directly o
 
 ---
 
-Credits
+## Credits
 
 Uses:
 
