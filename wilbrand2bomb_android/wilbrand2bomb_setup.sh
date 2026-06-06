@@ -15,7 +15,7 @@ echo
 echo "wilbrand2bomb_android setup"
 echo
 echo "1) Install included Wilbrand_termux (recommended)"
-echo "2) Recompile Wilbrand_termux from source (if problems)"
+echo "2) Recompile Wilbrand_termux from source (if exploit fails)"
 echo
 
 read -p "Choose [1 or 2]: " choice
