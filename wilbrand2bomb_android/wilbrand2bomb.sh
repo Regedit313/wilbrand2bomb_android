@@ -35,7 +35,7 @@ while true; do
 
             read -p "Enter Wii MAC address: " mac
             read -p "Enter date MM/DD/YYYY: " date
-            read -p "Enter Wii firmware version: " version
+            read -p "Enter Wii firmware version (recommended: 4.3E / 4.3U / 4.3J / 4.3K): " version
 
             rm -rf COPY_TO_SD
             mkdir -p COPY_TO_SD
