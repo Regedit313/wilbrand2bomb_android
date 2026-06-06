@@ -124,7 +124,7 @@ inside the project directory.
 Example:
 
 wilbrand2bomb_android/
-└── COPY_TO_SD/
+---- COPY_TO_SD/
 
 Copy the contents of this folder to the root of your Wii SD card.
 
