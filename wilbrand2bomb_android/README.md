@@ -32,40 +32,53 @@ The setup must be completed before generating an exploit.
 
 ## Menu
 
-When started, "wilbrand2bomb.sh" provides the following options:
+When started, wilbrand2bomb.sh provides the following options:
 
 1 = Generate Wilbrand exploit
+
 9 = First-time Setup
+
 0 = Exit
 
 ---
 
 ## First-time Setup
 
+Select:
+
+9 = First-time Setup
+
 The setup menu provides two installation methods:
 
 1 = Install included Wilbrand_termux (recommended)
+
 2 = Recompile Wilbrand_termux from source (if exploit fails)
 
-Option 1
+### Option 1
 
 Installs the included precompiled ARM64 version of Wilbrand.
 
 This is the recommended option and should work on most modern Android devices.
 
-Option 2
+### Option 2
 
 Recompiles Wilbrand directly on the device using the included source code.
 
 Use this option only if the included version does not work correctly on your device.
 
+This option exists for compatibility and future maintenance purposes.
+
 ---
 
 ## Generate Wilbrand Exploit
 
-When generating an exploit, the following information is required:
+Select:
 
-Wii MAC Address
+1 = Generate Wilbrand exploit
+
+The following information is required:
+
+### Wii MAC Address
 
 Example:
 
@@ -78,12 +91,16 @@ AABBCCDDEEFF
 The MAC address can be found on the Wii:
 
 Wii Button
+
 → System Settings
+
 → Page 2
+
 → Internet
+
 → Information
 
-Date
+### Date
 
 Enter the current date using:
 
@@ -93,20 +110,26 @@ Example:
 
 06/06/2026
 
-Wii Firmware Version
+### Wii Firmware Version
 
 Recommended values:
 
 4.3E
+
 4.3U
+
 4.3J
+
 4.3K
 
 Where:
 
 E = Europe
+
 U = USA
+
 J = Japan
+
 K = Korea
 
 ---
@@ -117,7 +140,7 @@ Each time an exploit is generated, the previous output is automatically removed.
 
 A new folder is created:
 
-COPY_TO_SD
+COPY_TO_SD/
 
 inside the project directory.
 
@@ -142,9 +165,34 @@ A precompiled ARM64 version for Android / Termux.
 It also contains the complete original source code:
 
 source/
+
 data/
 
 This allows the project to be recompiled in the future if needed.
+
+---
+
+## Folder Structure
+
+### Folder Structure After Setup
+
+wilbrand2bomb_android/
+
+---- README.md
+
+---- wilbrand2bomb.sh
+
+---- wilbrand2bomb_setup.sh
+
+---- Wilbrand_termux
+
+---- source/
+
+---- data/
+
+---- COPY_TO_SD/
+
+The COPY_TO_SD folder is recreated each time a new exploit is generated.
 
 ---
 
@@ -155,6 +203,10 @@ The included Wilbrand binary is recommended for normal use.
 The recompilation option exists for compatibility and future maintenance purposes.
 
 The original source code is preserved to allow rebuilding the project directly on Android through Termux if required.
+
+Each new exploit generation automatically replaces the previous COPY_TO_SD folder.
+
+The generated files must be copied to the root of the Wii SD card before attempting the exploit.
 
 ---
 
